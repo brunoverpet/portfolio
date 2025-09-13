@@ -45,7 +45,7 @@ export default function CardProject({
       <div className="flex justify-between items-center mt-3">
         <div className="flex gap-x-3">
           <Link
-            href={githubLink}
+            href={projectLink}
             target="_blank"
             rel="noopener noreferrer"
             title="Lien externe vers le projet Github"
@@ -53,12 +53,12 @@ export default function CardProject({
           >
             <div className="flex gap-x-1 text-xl items-center">
               <SquareArrowOutUpRight strokeWidth="1" size="40" />
-              <span className="hidden xl:block">Voir le code</span>
+              <span className="hidden xl:block">Tester le projet</span>
             </div>
           </Link>
 
           <Link
-            href={projectLink}
+            href={githubLink}
             target="_blank"
             rel="noopener noreferrer"
             title="Tester le projet en version DEMO"
@@ -66,7 +66,7 @@ export default function CardProject({
           >
             <div className="flex gap-x-1 text-xl items-center">
               <Github color="#1D1D1F" strokeWidth="1" size={40} />
-              <span className="hidden xl:block">Tester le projet</span>
+              <span className="hidden xl:block">Voir le code</span>
             </div>
           </Link>
         </div>

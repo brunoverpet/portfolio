@@ -22,3 +22,12 @@ body {
     .wght-400 { font-weight: 400; font-variation-settings: "MONO" 1, "CASL" 0, "CRSV" 0, "slnt" 0, "wght" 400; }
     .wght-700 { font-weight: 700; font-variation-settings: "MONO" 1, "CASL" 0, "CRSV" 0, "slnt" 0, "wght" 700; }
 }
+
+@keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
+.animate-blink {
+    animation: blink 1s step-start infinite;
+}
