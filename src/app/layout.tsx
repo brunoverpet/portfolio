@@ -29,7 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${recursive.variable} font-mono-recursive antialiased my-16 mx-5`}>
+      <body
+        className={`${recursive.variable} ${lexendDeca.variable} font-mono-recursive antialiased my-16 mx-5`}
+      >
         {children}
       </body>
     </html>
