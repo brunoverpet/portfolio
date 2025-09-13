@@ -10,7 +10,7 @@ import TypingText from '@/app/components/TypingText'
 export default function Home() {
   const fadeInUpVariant = {
     hidden: { opacity: 0, y: 10 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' as any } },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, ease: 'easeOut' as const } },
   }
 
   const paragraphVariants = {
