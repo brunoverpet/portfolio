@@ -32,7 +32,7 @@ export default function CardProject({
         <span className="font-light xl:text-xl">{take}</span>
       </div>
       <video
-        className={`w-full aspect-video ${isMobile ? 'max-w-[350px]' : ''} mx-auto`}
+        className={`w-full aspect-video ${isMobile ? 'max-w-[350px]' : ''} mx-auto shadow-sm`}
         autoPlay
         muted
         loop
