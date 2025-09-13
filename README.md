@@ -11,10 +11,12 @@ Ce site a pour objectif de présenter mes projets, mon univers créatif et ma ma
 ## 🎯 Objectif
 
 Mettre en avant :
+
 - Mes projets récents et significatifs
 - Mon approche de développement (structurée et créative)
 - Mes informations de contact et disponibilité
-[.gitignore](../streamly-web/.gitignore)
+  [.gitignore](../streamly-web/.gitignore)
+
 ## 📂 Projets présentés
 
 - **Plan A – Streamly** : (il faut ajouter un court résumé)
