@@ -7,7 +7,7 @@ const recursive = Recursive({
   subsets: ['latin'],
   variable: '--font-recursive',
   axes: ['MONO'],
-  weight: 'variable', // light, regular, bold
+  weight: 'variable',
 })
 
 const lexendDeca = Lexend_Deca({
@@ -29,7 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <body className={`${recursive.className} antialiased`}>{children}</body>
+      <body className={`${recursive.variable} font-mono-recursive antialiased my-16 mx-5`}>
+        {children}
+      </body>
     </html>
   )
 }
