@@ -4,12 +4,21 @@
     --text-default: #1D1D1F;
 }
 
-@theme inline {
-  --font-sans: var(--font-lexend);
-  --font-mono: var(--font-recursive);
+/* Famille par défaut */
+body {
+    font-family: var(--font-recursive), system-ui, sans-serif;
+    color: var(--text-default);
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--text-default);
+/* Utilitaires custom sans tailwind.config.js */
+@layer utilities {
+    /* Force l’axe MONO linear */
+    .font-mono-recursive {
+        font-variation-settings: "MONO" 1, "CASL" 0, "CRSV" 0, "slnt" 0;
+    }
+
+    /* Variantes de poids tout en restant en MONO */
+    .wght-300 { font-weight: 300; font-variation-settings: "MONO" 1, "CASL" 0, "CRSV" 0, "slnt" 0, "wght" 300; }
+    .wght-400 { font-weight: 400; font-variation-settings: "MONO" 1, "CASL" 0, "CRSV" 0, "slnt" 0, "wght" 400; }
+    .wght-700 { font-weight: 700; font-variation-settings: "MONO" 1, "CASL" 0, "CRSV" 0, "slnt" 0, "wght" 700; }
 }
