@@ -24,19 +24,24 @@ export default function CardProject({
   githubLink,
 }: CardProjectInterface) {
   const isMobile = useIsMobile()
-  const widthToApply = isMobile ? '350' : '1381'
-  const heightToApply = isMobile ? '197' : '777'
 
   return (
     <div className="">
       <div>
-        <h3 className="">{name}</h3>
-        <span className="font-light">{take}</span>
+        <h3 className="xl:text-5xl">{name}</h3>
+        <span className="font-light xl:text-xl">{take}</span>
       </div>
-      <video width={widthToApply} height={heightToApply} autoPlay muted loop playsInline>
+      <video
+        className={`w-full aspect-video ${isMobile ? 'max-w-[350px]' : ''} mx-auto`}
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
         <source src={src} type="video/mp4" />
         Votre navigateur ne prend pas en charge la balise vidéo.
       </video>
+
       <div className="flex justify-between items-center mt-3">
         <div className="flex gap-x-3">
           <Link
@@ -46,7 +51,10 @@ export default function CardProject({
             title="Lien externe vers le projet Github"
             aria-label="Lien externe vers le projet Github"
           >
-            <Github color="#1D1D1F" strokeWidth="1" size="40" />
+            <div className="flex gap-x-1 text-xl items-center">
+              <SquareArrowOutUpRight strokeWidth="1" size="40" />
+              <span className="hidden xl:block">Voir le code</span>
+            </div>
           </Link>
 
           <Link
@@ -56,10 +64,13 @@ export default function CardProject({
             title="Tester le projet en version DEMO"
             aria-label="Tester le projet en version DEMO"
           >
-            <SquareArrowOutUpRight strokeWidth="1" size="40" />
+            <div className="flex gap-x-1 text-xl items-center">
+              <Github color="#1D1D1F" strokeWidth="1" size={40} />
+              <span className="hidden xl:block">Tester le projet</span>
+            </div>
           </Link>
         </div>
-        <span className="text-right">
+        <span className="text-right xl:text-2xl">
           {version} - {date}
         </span>
       </div>
