@@ -37,7 +37,7 @@ export default function TypingText({ text }: { text: string }) {
   }, [index, isTyping, text])
 
   return (
-    <h2 ref={ref} className="text-center font-bold xl:text-3xl">
+    <h2 ref={ref} className="text-center font-bold xl:text-3xl" style={{ minHeight: '2.5rem' }}>
       {displayedText}
       {isTyping && index < text.length && <span className="animate-blink">|</span>}
     </h2>

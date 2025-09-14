@@ -188,7 +188,7 @@ export default function Home() {
           whileInView="visible"
           viewport={{ once: false }}
           variants={{
-            hidden: {},
+            hidden: { },
             visible: { transition: { delayChildren: stagger(0.3) } },
           }}
         >
@@ -233,7 +233,7 @@ export default function Home() {
       </div>
       <div className="mt-52">
         <TypingText text="Scène 03 - CONTACT" />
-        <p className="text-center">Disponible pour écrire la suite (mission / alternance)</p>
+        <p className="text-center mt-16">Disponible pour écrire la suite (mission / alternance)</p>
         <div className="flex gap-x-5 justify-center mt-16">
           <Link
             href="https://github.com/brunoverpet"
